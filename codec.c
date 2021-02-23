@@ -26,7 +26,7 @@ int main()
         //scanf("%s %d", (ptr + i)->subject, &(ptr + i)->marks);*/
 
 
-        int no_of_boxes, option, currentbox=0,temp,x,i,k;
+        int no_of_boxes, option, currentbox=0,temp,x,i,k,m=1,j,height,box_no,count=0,boxno,uniquebox_id;
         printf("ENTER THE NUMBER OF BOXES : ");
         scanf("%d",&no_of_boxes);
         struct boxes box [no_of_boxes];
@@ -51,7 +51,7 @@ int main()
                     printf("ENTER THE HEIGHT : ");
                     scanf("%d",&box[currentbox].height);
                     printf("ENTER THE COLOUR : ");
-                    scanf("%s",&box[currentbox].colour);
+                    scanf("%s",box[currentbox].colour);
                     printf("ENTER THE WEIGHT : ");
                     scanf("%d",&box[currentbox].weight);
                  }
@@ -71,12 +71,12 @@ int main()
                  }
                  break;
                  case 3:
-                 int m=1;
+                 
                  //scanf("%d",&k);
                  //printf("%d",box[k].unique_id);
-                 for(int j=1;j<=no_of_boxes;j++)
+                 for( j=1;j<=no_of_boxes;j++)
                  {
-                     printff("%d",&box[j].height);
+                     printf("%d",&box[j].height);
                      if(box[j].height>box[m++].height)
                      height=j;
                      //box++;
@@ -84,14 +84,14 @@ int main()
                  printf("maximum box height is:%f",box[height].height);
                  break;
                  case 4:
-                 int count=0,boxno;
-                 for(int boxno=0;boxno<no_of_boxes;boxno++) 
+                  count=0,boxno;
+                 for( boxno=0;boxno<no_of_boxes;boxno++) 
                  {
                     printf("%d\n",box[boxno]);
-                    printf("%c\n",box[boxno].colour)
+                    printf("%c\n",box[boxno].colour);
                     if(box[boxno].colour==box[boxno++].colour)
                     {
-                        count+=count
+                        count+=count;
                 
                     }
 
@@ -99,7 +99,7 @@ int main()
                  }printf("colour count:%c\n",count);
                  break;
                  case 5:
-                 int uniquebox_id;
+                
                  printf("enter uniquebox_id\n");
                  scanf("%d",&uniquebox_id);
                  printf("unique_id is:%d\n",uniquebox_id);
@@ -107,14 +107,19 @@ int main()
                  {
                      if(uniquebox_id==box[box_no].unique_id)
 
-                 }printf("%d\n",box[box_no]);
+                 
+                 printf("%d\n",box[box_no]);
+                 }
                  break;
-
              
 
              
-             }
-        } return 0;
+
+             
+             
+        }
+        return 0;
+        }
 }
 
 
