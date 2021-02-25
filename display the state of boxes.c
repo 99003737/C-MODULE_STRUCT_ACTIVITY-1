@@ -14,16 +14,16 @@ struct boxes{
 } ;
 int main()
 {
-     //struct boxes *ptr;
-    /*int number,no_of_boxes;
+     struct boxes *ptr;
+    *int number,no_of_boxes;
     printf("Enter the number of boxes: ");
     scanf("%d", &no_of_boxes);
 
-    // Memory allocation for noOfboxex structures
-    //ptr = (struct boxes *)malloc(no_of_boxes * sizeof(struct boxes));
-    //for (number = 0; number < no_of_boxes; number++) {
-        //printf("Enter the name of the subject and marks respectively:\n");
-        //scanf("%s %d", (ptr + i)->subject, &(ptr + i)->marks);*/
+     Memory allocation for noOfboxex structures
+    ptr = (struct boxes *)malloc(no_of_boxes * sizeof(struct boxes));
+    for (number = 0; number < no_of_boxes; number++) {
+        printf("Enter the name of the subject and marks respectively:\n");
+        scanf("%s %d", (ptr + i)->subject, &(ptr + i)->marks);
 
 
         int no_of_boxes, option, currentbox=0,temp,x,i,k;
