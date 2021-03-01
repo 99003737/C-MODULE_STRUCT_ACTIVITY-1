@@ -2,7 +2,7 @@
     Unity Project - A Test Framework for C
     Copyright (c) 2007-19 Mike Karlesky, Mark VanderVoord, Greg Williams
     [Released under MIT License. Please refer to license.txt for details]
-============================================================================ */
+============================================================================ */   
 
 #include "unity.h"
 #include <stddef.h>
@@ -210,7 +210,7 @@ void UnityPrintNumberByStyle(const UNITY_INT number, const UNITY_DISPLAY_STYLE_T
                 UNITY_OUTPUT_CHAR('\\');
                 UNITY_OUTPUT_CHAR('n');
             }
-            /* unprintable characters are shown as codes */
+            /* unprintable characters are shown as the codes */
             else
             {
                 UNITY_OUTPUT_CHAR('\\');
